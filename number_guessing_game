@@ -1,0 +1,16 @@
+secret_number = 34
+trials = 0
+while True:
+    guess = int(input("Guess the secret number (between 1 and 100): "))
+    trials += 1
+    
+    
+    if guess < secret_number:
+        print("Too low! Try again.")
+    elif guess > secret_number:
+        print("Too high! Try again.")
+    
+    else:
+        print("Congratulations! You've guessed the secret number.")
+        print(f"You tried {trials} times")
+        break
