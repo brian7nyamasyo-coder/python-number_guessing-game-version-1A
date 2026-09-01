@@ -4,8 +4,11 @@ while True:
     guess = int(input("Guess the secret number (between 1 and 100): "))
     trials += 1
     
-    
-    if guess < secret_number:
+    if guess > 100:
+        print("Please guess a number between 1 and 100.")
+    elif guess < 1:
+        print("Please guess a number between 1 and 100.")
+    elif guess < secret_number:
         print("Too low! Try again.")
     elif guess > secret_number:
         print("Too high! Try again.")
